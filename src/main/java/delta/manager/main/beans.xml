@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="mvc" class="delta.manager.mvc.MVC">
+		<constructor-arg ref="model" />
+		<constructor-arg ref="view" />
+		<constructor-arg ref="controller" />
+	</bean>
+	
+	<bean id="model" class="delta.manager.mvc.model.DeltaManagerModel" />
+	<bean id="view" class="delta.manager.mvc.view.DeltaManagerView" />
+	<bean id="controller" class="delta.manager.mvc.controller.DeltaManagerController" />
+</beans>
