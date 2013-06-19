@@ -1,4 +1,4 @@
-DeltaManager
-============
+MyCode
+======
 
-Trading Risk Management tool.
+Repository to store all my personal codes, segregated by language types
